@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './estilo.css';
-import texto from './components/phrases';
+import text from './components/phrases';
 
 class App extends Component {
 
@@ -11,7 +11,7 @@ class App extends Component {
         };
 
         this.phrases = [
-            ...texto
+            ...text
         ];
 
         this.openCookie = this.openCookie.bind(this);
