@@ -1,4 +1,4 @@
-let texto = [];
+let text = [];
 
 await fetch('https://zenquotes.io/api/quotes/random')
 .then((r) => r.json())
@@ -6,13 +6,13 @@ await fetch('https://zenquotes.io/api/quotes/random')
     let response = json;
 
     response.map((i) => {
-        texto.push(i.q);
+        text.push(i.q);
     })
 
-    return texto;
+    return text;
 })
 .catch(() => {
     console.log('Deu errado aí padrin');
 })
 
-export default texto;
+export default text;
